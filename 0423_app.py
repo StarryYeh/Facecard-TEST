@@ -4,7 +4,7 @@ import os, csv, json
 app = Flask(__name__)
 
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(BASE_DIR, "..", "FindLKprofile", "0423_contacts.csv")
+DATA_FILE = os.path.join(BASE_DIR, "0423_contacts.csv")
 IMAGE_ROOT = BASE_DIR
 MET_FILE  = os.path.join(BASE_DIR, "met_status.json")
 
