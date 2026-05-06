@@ -209,7 +209,7 @@
         <div class="modal-name" id="mName"></div>
         <div class="modal-role" id="mRole"></div>
         <button class="met-toggle" id="metToggle" onclick="toggleMet()">
-          <span id="metIcon">○</span><span id="metText">Mark as Met</span>
+          <span id="metIcon">+</span><span id="metText">Mark Met</span>
         </button>
       </div>
     </div>
@@ -385,8 +385,8 @@ function openModal(c){
 
 function updateMetToggle(met){
   const btn=document.getElementById("metToggle");
-  document.getElementById("metIcon").textContent=met?"✓":"○";
-  document.getElementById("metText").textContent=met?"Met ✓":"Mark as Met";
+  document.getElementById("metIcon").textContent=met?"✓":"+";
+  document.getElementById("metText").textContent=met?"Met":"Mark Met";
   btn.classList.toggle("active",met);
 }
 
